@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="hymann,Contact us" />
+<title>HyMann Soft -- Adminner FAQ</title>
+<link href="../css/style.css" tppabs="http://www.hymann.com/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<div id="tmenu">
+<img style="alignment-adjust:middle" src="../images/top2.png" tppabs="http://www.hymann.com/images/top2.png" alt="hymann logo"/>
+<ul>
+  <li><a href="../index.html" tppabs="http://www.hymann.com/index.html"><span class="al"></span>Home<span class="ar"></span></a></li>
+    <li><a href="../products.html" tppabs="http://www.hymann.com/products.html"><span class="al"></span>Products<span class="ar"></span></a></li>
+    <li><a href="../download.html" tppabs="http://www.hymann.com/download.html"><span class="al"></span>Downloads<span class="ar"></span></a></li>
+    <li><a href="../purchase/purchase.html" tppabs="http://www.hymann.com/purchase/purchase.html"><span class="al"></span>Purchase<span class="ar"></span></a></li>
+        <li><a href="../support/support.html" tppabs="http://www.hymann.com/support/support.html"><span class="al"></span>Support<span class="ar"></span></a></li>
+</ul>
+</div>
+
+
+<div class="div_middle">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+    <td valign="middle" class="text"><p><img src="Adminner_44.png" tppabs="http://www.hymann.com/adminner/Adminner_44.png" alt="Adminner" /><span class="bigfont2">FAQs</span></p></td>
+    <td align="right"><img src="../images/bf_66.png" tppabs="http://www.hymann.com/images/bf_66.png" width="132" height="66" alt="butterfly" /></td>
+  </tr>
+</table>
+<h4><a id="precedent" class="head_p">1.Before Install</a></h4>
+<p>You'd better  install it on the computer you  frequently logins, and control all computers, services and other things on it.</p>
+<p>On the computer you want to install Adminner on, open folder %windir%MicroSoft.Net/Framework/, check if there are folder &quot;v4.0.30319&quot; or other version above ,if there are not , please download and install .Net Framework 4.0.30319 or aboveï¼š</p>
+<p>download .Net Framework and install: <a href="javascript:if(confirm('http://www.microsoft.com/en-us/download/details.aspx?id=17718  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.microsoft.com/en-us/download/details.aspx?id=17718'" tppabs="http://www.microsoft.com/en-us/download/details.aspx?id=17718" class="li_normal">ver 4.0</a> &nbsp;&nbsp;&nbsp;&nbsp;  <a href="javascript:if(confirm('http://www.microsoft.com/en-us/download/details.aspx?id=30653  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.microsoft.com/en-us/download/details.aspx?id=30653'" tppabs="http://www.microsoft.com/en-us/download/details.aspx?id=30653" class="li_normal">ver 4.5</a> (you can select the language you want to install).</p>
+<h4><span class="head_p">2.Install Adminner</span></h4>
+<p>During install, the service &quot;HyMann Service Timer&quot; will be installed, you should  change its start type to automatic or automatic(delayed) and start it manually after you setup the timer tasks.</p>
+<p><img src="install_serviceTimer.png" tppabs="http://www.hymann.com/adminner/install_serviceTimer.png" width="645" height="224" alt="install Service Timer" /></p>
+<p>You can install/uninstall HyMann Service Timer at anytime by:</p>
+<p>serviceTimer.exe -install or serviceTimer.exe -uninstall.</p>
+<p><a id="checkpre" class="head_p">3.After install</a></p>
+<span class="text"><strong>To run the software, you need to</strong></span>:
+<ul>
+  <li class="li_1">Have a internet connection to our website(Adminner can't run without internet connection).</li>
+  <li class="li_1">Have the Windows NT families installed, including  2003 sp3, 2008, 2012, XP sp3, Vista, win7, win8, win8.1 installed in all computers.(Not test on 2000)</li>
+  <li class="li_1">Have a account that is the member of administrators  on all computers you want to control in your LAN..</li>
+  <li class="li_1">Don't disable the system share of c$, d$ on the computer which you want to control.</li>
+  <li class="li_1">If you are in the workgroup, and have the WINDOW of 2008, 2012, or vista, win7, win8, win8.1, you need to change registry in them this way:</li>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<a href="UAC.html" tppabs="http://www.hymann.com/adminner/UAC.html">see why and how to Handling Remote Connections Under UAC</a>.</p>
+</ul>
+<p> <strong>Start Services(on all computers)</strong>: </p>
+<ul>
+  <li class="li_1">Start service &quot;<strong>RemoteÂ ProcedureÂ CallÂ (RPC)</strong>&quot; in all computers.</li>
+  <li class="li_1">Start Service &quot;<strong>Windows Management Instrumentation</strong>&quot;  in all computers.</li>
+
+  <li class="li_1">Start service &quot;<strong>RemoteRegistry</strong>&quot; when execute regEdit.exe to connect to the target computer.</li>
+
+  <li class="li_1">Start service &quot;<strong>Remote Desktop Services</strong>&quot; when execute mstsc.exe to connect to the target computer.</li>
+</ul>
+<p> <strong>Change Firewall Setting(on all computers)</strong>: </p>
+<p> 1.Click Start, click Control Panel, and then click System and Security.</p>
+<p>2.Under the Windows Firewall heading, click Allow a program through Windows Firewall. </p>
+<ul>
+  <li class="li_1">Allow &quot;<strong>Windows Management Instrumentation(WMI)</strong>&quot; to through windows firewall on LAN.</li>
+  <li class="li_1">Allow &quot;<strong>Remote Shutdown</strong>&quot; to through windows firewall on LAN.</li>
+  <li class="li_1">Allow &quot;<strong>Remote Desktop</strong>&quot; to through windows firewall on LAN.</li>
+  <li class="li_1">Allow &quot;<strong>Remote Service Management</strong>&quot; to through windows firewall on LAN.</li>
+  <li class="li_1">Allow &quot;<strong>File and Printer Sharing</strong>&quot; to through windows firewall on LAN.</li>
+  </ul>
+<p>&nbsp;</p>
+<p>You can watch the video on YouTube: <a href="javascript:if(confirm('https://www.youtube.com/watch?v=7s-z1C-DDeY&feature=autoshare  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.youtube.com/watch?v=7s-z1C-DDeY&feature=autoshare'" tppabs="https://www.youtube.com/watch?v=7s-z1C-DDeY&feature=autoshare" target="_blank" class="bigfont3">Prerequisites of Adminner</a></p>
+<p>&nbsp;</p>
+<p class="head_p"> <a id="howtouse" class="head_p">4.Using Adminner Step By Step</a></p>
+
+<p><strong>Default login user and password is: admin</strong></p>
+<p>1.Change the password of admin  and timeService in the &quot;User Management&quot; window. Add another login user for backup.</p>
+<p>2.Specify the domain, remote account, remote password in the &quot;User Management&quot; window if you use same user account to manage computers.</p>
+<p>3.Define your own Type Of service in the &quot;Type Of service Management&quot; window.</p>
+<p>4.If you have same service or program in lot of computers, define your own Service's Type in the &quot;Service's Type Management&quot; window.</p>
+<p>5.Performing a computer scan in the &quot;Computer Scan&quot; window, to gather all computer's information in your LAN.</p>
+<p>6.Manage computers data in the &quot;IP-Computer Management&quot; window. If you have diffrent account for remote computer, you need to specify them.</p>
+<p>7.Performing a service scan in the &quot;Service Scan&quot; window, to gather all services info you want to control.</p>
+<p>8.Manamge services data and add program data as your wish in the &quot;Service Management&quot; window.</p>
+<p>OK,all data is prepared, enjoy it!</p>
+<p>9.If you want to use service &quot;HyMann ServiceTimer&quot;, please add tasks in the &quot;Service Timer Task Management&quot; window ,change it's start type to auto, <strong>change it's Login credentials to your account and password</strong>, than start service manually.</p>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="text"><span class="head_p">5.Computer Not online:</span>
+      <p> Ping IP to see if computer is online and alive.</p>
+      <h4><span class="head_p">6.Can't get computer name</span></h4>
+      <p>Please check <a href="#checkpre">Conditions Precedent</a> befor you do anything.</p></td>
+    <td align="right"><img src="../images/butterfly2.gif" tppabs="http://www.hymann.com/images/butterfly2.gif" width="165" height="150" alt="butterfly" /></td>
+  </tr>
+</table>
+<p>Run wbemtest.exe ,connect to \\<strong>target ip address</strong>\root\cimv2 with user account and password on target computer.(Replace <strong>target ip address</strong> first)</p>
+<p>Follow the result:</p>
+<p><strong>1.RPC server is unavailable</strong></p>
+<p>ping target computer to see if it's alive.</p>
+<p> check the firewall  on target computer, sure the &quot;Windows Management Instrumentation(WMI)&quot; is allowed on LAN.</p>
+<p><strong>2.Access is denied</strong></p>
+<p>User account and password not correct or have no permission  on target computer. Add the account to group administrators, if account and password are correct.</p>
+<p>If you are in workgroup, and target computer have UAC in it:</p>
+<p><a href="UAC.html" tppabs="http://www.hymann.com/adminner/UAC.html">see why and how to Handling Remote Connections Under UAC</a>.</p>
+<p><strong>3.Teh service can't started, either because it is disabled or because it has no enabled</strong></p>
+<p>Check the service &quot;Windows Management Instrumentation&quot;, try to start it.</p>
+<p><strong>4.Class not registered</strong></p>
+<p>Some WMI class is wrong  on target computer.</p>
+<p>Please read  below.</p>
+<p><strong>5.WMI: Generic failure, or Not found</strong></p>
+<p>WMI have error  on target computer.</p>
+<p>Restart the target computer, try again. If error still there, try to repaire WMI:</p>
+<p align="left"><span lang="EN-US" xml:lang="EN-US">1) Start the target computer and press <strong>F8</strong> on boot up and selectÂ <strong>Safe Mode</strong>.</span></p>
+<p align="left"><span lang="EN-US" xml:lang="EN-US">2) In the start menu type &quot;<strong>cmd</strong>&quot;<strong> </strong>(without quotes) andÂ on the top search result, right click the program icon and choose<strong> Run as administrator</strong></span></p>
+<p align="left"><span lang="EN-US" xml:lang="EN-US">3) Type &quot;<strong>net stop winmgmt</strong>&quot; (without quotes) and press <strong>Enter</strong> to make certain the<strong> Windows Management Instrumentation (WMI)</strong> service is not running.</span></p>
+<p align="left"><span lang="EN-US" xml:lang="EN-US">4) Open a Windows Explorer and locate the path to <strong>C:\ windows\system32\WBEM\</strong> folder and rename the <strong>Repository</strong> folder to something else like <strong>RepositoryOLD </strong></span></p>
+<p align="left"><span lang="EN-US" xml:lang="EN-US">5) Reboot and restart computer as normal.</span></p>
+<p align="left"><span lang="EN-US" xml:lang="EN-US">6) In the start menu type &quot;<strong>cmd</strong>&quot;<strong> </strong>(without quotes) andÂ on the top search result, right click the icon and choose<strong> Run as administrator</strong></span></p>
+<p align="left"><span lang="EN-US" xml:lang="EN-US">7) Type &quot;<strong>net stop winmgmt</strong>&quot; (without quotes) and press enter to stop the <strong>WMI</strong> service.</span></p>
+<p align="left"><span lang="EN-US" xml:lang="EN-US">8) Type &quot;<strong>winmgmt /resetRepository</strong>&quot; (without quotes)Â and then restart the computer.</span></p>
+<p class="bigfont"><span class="head_p">7. HyMann Service Timer don't work</span></p>
+<p>1) Please check Service login account is the member of administrator.</p>
+<p>2) Check if the HyMann Service Timer is running.</p>
+<p>3) Please check the log in file serviceTimer.log.</p>
+<p class="bigfont"><span class="head_p">8. Is Adminner  safe?</span></p>
+<p>Yes. </p>
+<p>1. The database file data.db is encrypted.</p>
+<p>2. Adminner encrypt all password before save it to datebase.</p>
+<p>3. Your login password is encrypt online.</p>
+<p>4. All password is encrypt before transfer.</p>
+<p class="bigfont">&nbsp;</p>
+<p class="head_p">9. Still have  questions?</p>
+<p>Please feel free to e-mail us at <a href="mailto:support@hymann.com">support@hymann.com</a>, we will be happy to answer any questions you have. </p>
+</div>
+<!--
+    <div id="bmenuFGTL">
+<!--<a href="" target="_top" style="text-decoration:none;">
+<img src="/images/facebook.png" alt="Facebook" style="border:0;width:32px;height:32px;"/>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://plus.google.com/u/0/103773024061501456727?prsrc=3"
+   rel="publisher" target="_top" style="text-decoration:none;">
+<img src="/images/gplus-32.png" alt="Google+" style="border:0;width:32px;height:32px;"/>&nbsp;&nbsp;
+<a href="https://twitter.com/HyMannSoft"
+   target="_top" style="text-decoration:none;">
+<img src="/images/twitter.png" alt="Twitter" style="border:0;width:32px;height:32px;"/>&nbsp;&nbsp;
+<a href="https://www.linkedin.com/profile/view?id=357075493"
+   target="_top" style="text-decoration:none;">
+<img src="/images/linkin.png" alt="LinkIn" style="border:0;width:32px;height:32px;"/></a>
+
+    	</div>
+-->
+<div id="bmenuall">
+    <div id="bmenu">
+        <ul>
+          <li><a href="../about.html" tppabs="http://www.hymann.com/about.html"><span class="al"></span>About Us<span class="ar"></span></a></li>
+            <li><a href="../support/contact.html" tppabs="http://www.hymann.com/support/contact.html"><span class="al"></span>Contact Us<span class="ar"></span></a></li>
+        
+            <li><a href="../support/suggest.aspx.htm" tppabs="http://www.hymann.com/support/suggest.aspx"><span class="al"></span>Suggest<span class="ar"></span></a></li>
+                <li><a href="../privacy.html" tppabs="http://www.hymann.com/privacy.html"><span class="al"></span>Privacy<span class="ar"></span></a></li>
+                    <li><a href="../link.html" tppabs="http://www.hymann.com/link.html"><span class="al"></span>Links<span class="ar"></span></a></li>
+        </ul>
+        <div style="font-family: Arial; font-size: 16px;width: 900px; text-align: right; padding-top:20px;" align="left">&copy; 2014 - 2015 &nbsp; <strong>HyMann Soft</strong>,&nbsp; All rights reserved. 
+    	</div>
+    </div>
+  
+</div>
+    
+
+</body>
+</html>

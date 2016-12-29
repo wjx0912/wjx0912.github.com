@@ -1,0 +1,26 @@
+
+
+        function $(id)
+        {
+            return document.getElementById(id);
+        }
+
+
+function isEmail(str)
+{
+    var rule = "^[a-z0-9]+\\w+@[a-z0-9]+\\w+(?:\.[a-z]{2,}){1,2}$";
+    var myRegExp = new RegExp(rule);
+    var rst = myRegExp.test(str);
+    return rst;
+}
+
+function checkContent(txt, name) {
+
+    if (txt == "") {
+        alert("Please input " + name + "!");
+        return false;
+    }
+    else {
+        return true;
+    }
+}

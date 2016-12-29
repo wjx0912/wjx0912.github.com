@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="hymann,adminner,website page collect,website page publish,website page collection,website page publication,service timer" />
+<title>HyMann Soft -- Handling Remote Connections Under UAC</title>
+<link href="../css/style.css" tppabs="http://www.hymann.com/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<div id="tmenu">
+<img style="alignment-adjust:middle" src="../images/top2.png" tppabs="http://www.hymann.com/images/top2.png" alt="hymann logo"/>
+<ul>
+  <li><a href="../index.html" tppabs="http://www.hymann.com/index.html"><span class="al"></span>Home<span class="ar"></span></a></li>
+    <li><a href="../products.html" tppabs="http://www.hymann.com/products.html"><span class="al"></span>Products<span class="ar"></span></a></li>
+    <li><a href="../download.html" tppabs="http://www.hymann.com/download.html"><span class="al"></span>Downloads<span class="ar"></span></a></li>
+    <li><a href="../purchase/purchase.html" tppabs="http://www.hymann.com/purchase/purchase.html"><span class="al"></span>Purchase<span class="ar"></span></a></li>
+        <li><a href="../support/support.html" tppabs="http://www.hymann.com/support/support.html"><span class="al"></span>Support<span class="ar"></span></a></li>
+</ul>
+</div>
+
+
+<div class="div_middle">
+<div style="width:250px; height:300px; z-index:99; float:right">
+<img src="../images/flower3.png" tppabs="http://www.hymann.com/images/flower3.png" height="300" alt="flower" />
+</div>
+
+<h2 class="bigfont2">Handling Remote Connections Under UAC</h2>
+  <p>Whether you are connecting to a remote computer in a domain or in a workgroup determines whether UAC filtering occurs.</p>
+  <p>If your computer is part of a domain, connect to the target computer using a domain account that is in the local Administrators group of the remote computer. Then UAC access token filtering will not affect the domain accounts in the local Administrators group. Do not use a local, nondomain account on the remote computer, even if the account is in the Administrators group.</p>
+  <p>In a workgroup, the account connecting to the remote computer is a local user on that computer. Even if the account is in the Administrators group, UAC filtering means that a script runs as a standard user. A best practice is to create a dedicated local user group or user account on the target computer specifically for remote connections.</p>
+  <p>The security must be adjusted to be able to use this account because the account never has had administrative privileges. Give the local user:</p>
+  <p> Remote launch and activate rights to access DCOM. For more information, see <a href="javascript:if(confirm('http://msdn.microsoft.com/en-us/library/aa389290(v=vs.85).aspx  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://msdn.microsoft.com/en-us/library/aa389290(v=vs.85).aspx'" tppabs="http://msdn.microsoft.com/en-us/library/aa389290(v=vs.85).aspx">Connecting to WMI on a Remote Computer</a>.</p>
+  <p> Rights to access the WMI namespace remotely (Remote Enable). For more information, see <a href="javascript:if(confirm('http://msdn.microsoft.com/en-us/library/aa822575(v=vs.85).aspx  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://msdn.microsoft.com/en-us/library/aa822575(v=vs.85).aspx'" tppabs="http://msdn.microsoft.com/en-us/library/aa822575(v=vs.85).aspx">Access to WMI Namespaces</a>.</p>
+  <p> Right to access the specific securable object, depending on the security required by the object.</p>
+  <p>If you use a local account, either because you are in a workgroup or it is a local computer account, you may be forced to give specific tasks to a local user. For example, you can grant the user the right to stop or start a specific service through the SC.exe command, the GetSecurityDescriptor and SetSecurityDescriptor methods of Win32_Service, or through Group Policy using Gpedit.msc. Some securable objects may not allow a standard user to perform tasks and offer no means to alter the default security. In this case, you may need to disable UAC so that the local user account is not filtered and instead becomes a full administrator. Be aware that for security reasons, disabling UAC should be a last resort.</p>
+  <p>Disabling Remote UAC by changing the registry entry that controls Remote UAC is not recommended, but may be necessary in a workgroup. </p>
+  <p>The registry entry is:</p>
+  <p><strong>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\system\LocalAccountTokenFilterPolicy</strong>. </p>
+  <p>When the value of this entry is zero (0), Remote UAC access token filtering is enabled. When the value is 1, remote UAC is disabled.</p>
+  <p>If there aren't this key, create a <strong>Dword32</strong> key, set value=1.</p>
+</div>
+
+<!--
+    <div id="bmenuFGTL">
+<!--<a href="" target="_top" style="text-decoration:none;">
+<img src="/images/facebook.png" alt="Facebook" style="border:0;width:32px;height:32px;"/>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://plus.google.com/u/0/103773024061501456727?prsrc=3"
+   rel="publisher" target="_top" style="text-decoration:none;">
+<img src="/images/gplus-32.png" alt="Google+" style="border:0;width:32px;height:32px;"/>&nbsp;&nbsp;
+<a href="https://twitter.com/HyMannSoft"
+   target="_top" style="text-decoration:none;">
+<img src="/images/twitter.png" alt="Twitter" style="border:0;width:32px;height:32px;"/>&nbsp;&nbsp;
+<a href="https://www.linkedin.com/profile/view?id=357075493"
+   target="_top" style="text-decoration:none;">
+<img src="/images/linkin.png" alt="LinkIn" style="border:0;width:32px;height:32px;"/></a>
+
+    	</div>
+-->
+<div id="bmenuall">
+    <div id="bmenu">
+        <ul>
+          <li><a href="../about.html" tppabs="http://www.hymann.com/about.html"><span class="al"></span>About Us<span class="ar"></span></a></li>
+            <li><a href="../support/contact.html" tppabs="http://www.hymann.com/support/contact.html"><span class="al"></span>Contact Us<span class="ar"></span></a></li>
+        
+            <li><a href="../support/suggest.aspx.htm" tppabs="http://www.hymann.com/support/suggest.aspx"><span class="al"></span>Suggest<span class="ar"></span></a></li>
+                <li><a href="../privacy.html" tppabs="http://www.hymann.com/privacy.html"><span class="al"></span>Privacy<span class="ar"></span></a></li>
+                    <li><a href="../link.html" tppabs="http://www.hymann.com/link.html"><span class="al"></span>Links<span class="ar"></span></a></li>
+        </ul>
+        <div style="font-family: Arial; font-size: 16px;width: 900px; text-align: right; padding-top:20px;" align="left">&copy; 2014 - 2015 &nbsp; <strong>HyMann Soft</strong>,&nbsp; All rights reserved. 
+    	</div>
+    </div>
+  
+</div>
+    
+
+</body>
+</html>

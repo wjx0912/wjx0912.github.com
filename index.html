@@ -1,141 +1,115 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8" />
-    <meta name="author" content="Tencent.AlloyTeam.Jetyu" />
-    <meta name="copyright" content="Tencent.AlloyTeam" />
-    <meta name="keyword" content="腾讯 Web 前端团队 - AlloyTeam, 腾讯Web前端大会" />
-    <title>腾讯 Web 前端团队 - AlloyTeam</title>
-    <link href="./style/main.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript">
-        // 测速
-        var _speedMark = new Date();
-
-
-        // 倒计时
-        var getLastDay = function(time){
-            var now = new Date();
-            var lastTime = time.getTime() - now.getTime();    
-            var lastDay = Math.ceil(lastTime / (1000 * 60 * 60 * 24));    
-            if (lastDay < 0){
-                lastDay = 0;
-            }
-            return lastDay;
-        }
-
-        // 呵呵，Z.P.
-        var lastDay6= getLastDay(new Date("2015-3-20"));
-        // 呵呵，A.L.
-        var lastDay7= getLastDay(new Date("2015-3-29"));
-        // 呵呵，IP
-        var lastDay8= getLastDay(new Date("2015-5-21"));
-        // 呵呵，T.S.
-        var lastDay9= getLastDay(new Date("2015-5-22"));
-        // 呵呵，A.A.
-        var lastDay10= getLastDay(new Date("2015-12-22"));
-
-        
-    </script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="安卓,手机,静思围棋,打谱,死活,手筋,名局细解" />
+<meta name="description" content="静思围棋，专业的安卓手机围棋软件"/>
+<script type="text/javascript" src="http://tajs.qq.com/stats?sId=55747325" charset="UTF-8"></script>
+<title>静思围棋</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <div class="title">Tencent AlloyTeam <script>document.write(new Date().getFullYear());</script></div>
-    <img class="logo" src="./style/image/alloy.png" />
-    <div class="breath" title="One Team, One Dream! ">light</div>
 
-    <!--a class="helpus" href='http://me.alipay.com/kinvix' target="helpus" title="支持开源项目，请我们喝杯咖啡吧^_Q">捐赠支持开源项目</a-->
+<div id="tmenu">
+<img style="alignment-adjust:middle" src="images/top2.png" alt="jingsiweiqi logo"/>
+<ul>
+  <li><a href="index.html"><span class="al"></span>首页<span class="ar"></span></a></li>
+    <li><a href="index.html"><span class="al"></span>产品<span class="ar"></span></a></li>
+    <li><a href="index.html"><span class="al"></span>下载<span class="ar"></span></a></li>
+    <li><a href="index.html"><span class="al"></span>付费<span class="ar"></span></a></li>
+        <li><a href="index.html"><span class="al"></span>支持<span class="ar"></span></a></li>
+</ul>
+</div>
 
 
-    <div class="workListBoard">
-        <h3>Works List</h3>
-        <ul class="workList">
-            <li><a target="_blank" href="http://www.AlloyTeam.com/">腾讯 AlloyTeam 团队博客</a></li>
-            <h5>- 2016 -</h5>
-            <!--li><a target="_blank" href="###">神秘HTML5动画创作工具{代号010}，发布倒计时：<script>document.write(lastDay7);</script> <span class="new">新</span></a></li>
-            <li><a target="_blank" href="###">神秘HTML5游戏{代号009}，发布倒计时：<script>document.write(lastDay9);</script> <span class="new">新</span></a></li>
-            <li><a target="_blank" href="###">神秘HTML5创作工具{代号008}，发布倒计时：<script>document.write(lastDay8);</script> <span class="new">新</span></a></li>
-            <li><a target="_blank" href="###">神秘HTML5动画引擎{代号007}，发布倒计时：<script>document.write(lastDay7);</script> <span class="new">新</span></a></li-->
-            <li><a target="_blank" href="http://github.com/AlloyTeam/AlloyTouch">60FPS的触摸运动——AlloyTouch<span class="new">新</span></a></li> 
-            <li><a target="_blank" href="https://github.com/AlloyTeam/AlloyFinger">超轻量级 Web 手势库——AlloyFinger<span class="new">新</span></a></li>
-            <li><a target="_blank" href="https://alloyteam.github.io/AlloyFlow">为工作流而生——AlloyFlow<span class="new">新</span></a></li>
-            <li><a target="_blank" href="https://alloyteam.github.io/AlloyTicker">时间旅行者——AlloyTicker<span class="new">新</span></a></li>
-            <li><a target="_blank" href="http://github.com/AlloyTeam/AlloyLever">Web开发调试工具——AlloyLever<span class="new">新</span></a></li> 
-          
-            
-            <h5>- 2015 -</h5>
-            
-            <li><a target="_blank" href="http://github.com/AlloyTeam/AlloyGameEngine">HTML5 游戏引擎——AlloyGameEngine</a></li> 
-            <li><a target="_blank" href="http://alloyteam.github.io/Rosin/">移动 Web 调试工具——Rosin</a></li> 
-            <li><a target="_blank" href="http://kmdjs.github.io/zoom/">图片【超分辨率】放大器</a></li>
-            
-            <h5>- 2014 -</h5>
-            
-            <li><a target="_blank" href="http://rehorn.github.io/livepool/">基于 NodeJs 的跨平台 Web 抓包替换工具——LivePool</a></li>
-            <li><a target="_blank" href="http://alloyteam.github.io/AlloyStick/">HTML5 骨骼动画引擎——AlloyStick</a></li>
-            <li><a target="_blank" href="http://CodeStar.AlloyTeam.com/">腾讯 CodeStar 第二季 <前端突击队> </a></li>
-
-            <h5>- 2013 -</h5>
-                
-            <li><a target="_blank" href="http://alloyteam.github.io/AlloyDesigner/">新概念 Web 开发工具——AlloyDesigner</a></li>
-            <li><a target="_blank" href="http://alloyteam.github.io/JXAnimate/">基于 CSS3 的并行动画引擎——JXAnimate</a></li>
-            <li><a target="_blank" href="http://alloyteam.github.io/Spirit/">腾讯移动 Web 整体解决方案——Spirit</a></li>
-            <li><a target="_blank" href="http://CodeStar.AlloyTeam.com/q1/">腾讯 CodeStar 第一季 <前端代码特工></a></li>
-            
-            <h5>- 2012 -</h5>
-                
-            <li><a target="_blank" href="./hello_html5.html">Hello HTML5</a></li>
-            <li><a target="_blank" href="http://alloyteam.github.io/AlloyPhoto/">HTML5 专业级图像处理引擎——AlloyImage</a></li>
-            <li><a target="_blank" href="http://madscript.com/modjs/">高性能 Web 前端构建工具——ModJS</a></li>
-            <li><a target="_blank" href="https://github.com/chemdemo/node-stepify">stepify——轻松管理 Node.js 异步工作流</a></li>
-            <li><a target="_blank" href="http://wc.alloyteam.com/">HTML5 体感游戏《墙来了》</a></li>
-            <li><a target="_blank" href="http://www.alloyteam.com/wp-content/demos/css3-tencent-qq-logo-advanced/">CSS3 绘制腾讯 QQ 企鹅 Logo 动画版</a></li>
-            <!--li><a target="_blank" href="http://www.alloyteam.com/2012/10/css3-draw-qq-logo/">CSS3 绘制腾讯 QQ 企鹅 Logo</a></li-->
-            
-            <h5>- 2011 -</h5>
-            
-            <li><a target="_blank" href="http://alloyteam.github.io/AlloyTimer/">AlloyTimer 之番茄工作法</a></li>
-            <li><a target="_blank" href="http://tencentopen.github.io/proj/AlloyDesktop/index.html">Alloy Desktop 桌面 App 开发引擎</a></li>
-            
-            <h5>- 2010 -</h5>
-            
-            <li><a target="_blank" href="http://alloyteam.github.io/JXUI/">JX UI 组件库</a></li>
-            <li><a target="_blank" href="http://alloyteam.github.io/StreetFighter/">HTML5 街头霸王</a></li>
-            <li><a target="_blank" href="http://codetank.alloyteam.com/">CodeTank（代码坦克）</a></li>
-            <li><a target="_blank" href="http://css3lib.alloyteam.com/">CSS3 UI Lib</a></li>
-
-            <h5>- 2009 -</h5>
-            
-            <li><a target="_blank" href="http://www.alloyteam.com/2012/06/nodejs-smart-merging-css-wizard-tool-intelligentspriter/">NodeJs 智能合并 CSS 精灵图工具——iSpriter</a></li>
-            <li><a target="_blank" href="http://www.alloyteam.com/2012/05/web-front-end-tool-rythem-1/">跨平台 Web 抓包合并替换工具——Rythem</a></li>
-            <li><a target="_blank" href="http://www.alloyteam.com/?p=1050">Go!Png HTML5 的 Sprite 图片合体工具</a></li>
-            <!--li><a target="_blank" href="http://www.alloyteam.com/2012/05/dev-tools-chrome-live-reload/">Live Reload</a></li>
-            <li><a target="_blank" href="https://chrome.google.com/webstore/detail/omofllbfhlganmbmnnkneakndffbgkci">CSS Viewer</a></li>
-            <li><a target="_blank" href="https://chrome.google.com/webstore/detail/emajkockhmibmpnkbohiipfidkifdjhp">CSS Catcher</a></li-->
-
-            <h5>- 2008 -</h5>
-            
-            <li><a target="_blank" href="http://alloyteam.github.io/JX/">JX</a></li>
-            <li><a target="_blank" href="http://alloyteam.github.io/TEditor/">TEditor</a></li>
-
-            <li><a target="_blank" href="http://alloyteam.github.io/CodeGuide/">团队规范文档<span class="new">新</span></a></li>
-            <li><a target="_blank" href="http://github.com/AlloyTeam/">Working on Github.com</a></li>
-            <li><a target="_blank" href="http://www.AlloyTeam.com/about/">About</a></li>
+<div class="div_middle">
+  <table width="100%" border="0">
+    <tr>
+          <td width="61%" style="padding-left:40px;"><span class="bigfont2">您需要以下安卓围棋工具吗</span>
+        
+            <ul>
+          <li>全功能sgf棋谱编辑</li>
+          <li>多达3.5万的内置棋谱</li>
+          <li>随时更新不需升级版本的云棋谱</li>
+          <li>来自TOM/新浪/XGOO/gokifu的最新职业对局</li>
+          <li>来自互联网的最新围棋新闻推送</li>
+          <li>本地棋友交流</li>
+          <li>即时和非即时围棋对弈</li>
+          <li>照片识谱正在研发中</li>
+          <li>更多。。。。。。</li>
         </ul>
+      <p><span class="head_p"><strong>您找对地方了!</strong></span></p></td>
+
+      <td width="39%"><img src="images/hand.jpg" height="320" style="float:left; padding-top:15px; "/></td>
+
+  </table>
+  <table width="100%" border="0" cellspacing="4" cellpadding="4">
+    <tr>
+      <td width="71%"><p><strong>静思围棋</strong> 让您的围棋学习和娱乐，交流变得更简单!</p>
+      <p>我们专注于安卓手机围棋软件，及配套的基础设施服务。目前已经完成部分围棋模块开发，如果您有意愿参与推广或开发或协助整理资料请联系作者。静思围棋的开发离不开广大棋友，我们将全力将其制作为一款受棋友喜爱的APP!</p></td>
+      <td width="29%" class="bigfont3">更多围棋小工具即将推出，欢迎棋友提供想法</td>
+    </tr>
+  </table>
+  <div style="background:url(/images/products.png); float:left; height:200px; width:360px;">
+    <img src="images/butterfly2.gif" height="140" alt="products" style="vertical-align:top; float:right" />
+  </div>
+
+  <table width="100%" border="0" cellspacing="4" cellpadding="4">
+    <tr>
+      <td class="bigfont2"><img src="images/new.gif" /><br /><a href="http://www.weiqiba.com/1.9.1_2858.apk" >静思围棋下载</a></td>
+      <td class="text">集成打谱，内置棋谱，网络棋谱，棋友交流对弈的安卓APP(<a href="http://www.weiqiba.com/screenshot/1.9.1/screenshot.html" target="_blank">图文</a>)</td>
+    </tr>
+    <tr>
+      <td width="25%" class="bigfont2">飞燕围棋</td>
+      <td width="75%" class="text">不再维护的安卓APP</td>
+    </tr>
+    <tr>
+      <td class="bigfont2">windows通用对弈客户端</td>
+      <td class="text">预计支持知名互联网对弈平台，目前还只是一个想法<span class="bigfont3">(Multiple languages)</span></td>
+    </tr>
+
+    <tr>
+      <td class="bigfont2">棋谱转GIF工具</td>
+      <td class="text">免费的SGF转GIF工具<span class="bigfont3"> (Available soon!)</span></td>
+    </tr>
+    <tr>
+      <td class="bigfont2">windows打谱工具</td>
+      <td class="text">待完善<span class="bigfont3"> (Available soon!)</span></td>
+    </tr>
+    <tr>
+      <td class="bigfont2">windows定式软件</td>
+      <td><span class="text">待完善</span><span class="bigfont3"> (Available soon!)</span></td>
+    </tr>
+        <tr>
+          <td colspan="2" valign="bottom">
+          <hr  style="border-bottom:1px; margin-bottom:18px; margin-top:10px; " color="#0000FF" />
+          <p class="bigfont3" align="right">欢迎加入静思围棋QQ群交流:</span>&nbsp;&nbsp;14501533&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+          <hr  style="border-bottom:1px;" color="#0000FF" /></td>
+    </tr>
+  </table>
+
+
+</div>
+
+<div id="bmenuall">
+    <div id="bmenu">
+        <ul>
+          <li><a href="index.html"><span class="al"></span>关于<span class="ar"></span></a></li>
+            <li><a href="index.html"><span class="al"></span>联系<span class="ar"></span></a></li>
+        
+            <li><a href="index.htm"><span class="al"></span>建议<span class="ar"></span></a></li>
+                <li><a href="index.html"><span class="al"></span>版权<span class="ar"></span></a></li>
+                    <li><a href="index.html"><span class="al"></span>链接<span class="ar"></span></a></li>
+        </ul>
+        <div style="font-family: Arial; font-size: 16px;width: 900px; text-align: center; padding-top:20px;" align="left">&copy; 2011 - 2016 &nbsp; 静思围棋,&nbsp; 版权所有,&nbsp;鄂ICP备13014179号-1
+    	</div>
     </div>
-    <div class="copyright">Copyright &copy; <script>document.write(new Date().getFullYear());</script> <a href="http://www.AlloyTeam.com/" target="_blank">AlloyTeam.com</a>. All Rights Reserved.</div>
+  
+</div>
+    
 
-    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=40373280" charset="UTF-8"></script>
-    <script type="text/javascript">
 
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-23019343-9']);
-        _gaq.push(['_trackPageview']);
-
-        (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-
-    </script>
 </body>
+
 </html>

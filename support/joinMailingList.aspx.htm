@@ -1,0 +1,144 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>
+	HyMann Soft -- Join Mailing List
+</title><meta name="keywords" content="hymann,web data,adminner,collect,publish" />
+      <script src="../Scripts/hymann.js" tppabs="http://www.hymann.com/Scripts/hymann.js" lang="javascript" type="text/javascript"></script>
+      <link href="../css/style.css" tppabs="http://www.hymann.com/css/style.css" rel="stylesheet" type="text/css" /></head>
+<body>
+    <script lang="JavaScript" type="text/javascript">
+        function checkData() {
+            var rst = false;
+            var name=$('txtName');
+            if(checkContent(name.value,"Your Name")==false)
+            {
+                name.focus();
+                return rst;
+            }
+            var email = $('txtEmail');
+            if(checkContent(email.value,"Your Email")==false)
+            {
+                email.focus();
+                return rst;
+            }
+
+            if (isEmail(email.value)==false)
+            {
+                alert("Your Email are not correct!");
+                email.focus();
+                return rst;
+            }
+
+            rst = true;
+            return rst;
+        }
+     </script>
+    
+<div id="tmenu">
+<img style="alignment-adjust:middle" src="../images/top2.png" tppabs="http://www.hymann.com/images/top2.png" alt="hymann logo"/>
+<ul>
+  <li><a href="../index.html" tppabs="http://www.hymann.com/index.html"><span class="al"></span>Home<span class="ar"></span></a></li>
+    <li><a href="../products.html" tppabs="http://www.hymann.com/products.html"><span class="al"></span>Products<span class="ar"></span></a></li>
+    <li><a href="../download.html" tppabs="http://www.hymann.com/download.html"><span class="al"></span>Downloads<span class="ar"></span></a></li>
+    <li><a href="../purchase/purchase.html" tppabs="http://www.hymann.com/purchase/purchase.html"><span class="al"></span>Purchase<span class="ar"></span></a></li>
+        <li><a href="support.html" tppabs="http://www.hymann.com/support/support.html"><span class="al"></span>Support<span class="ar"></span></a></li>
+</ul>
+</div>
+
+<form method="post" action="http://www.hymann.com/support/joinMailingList.aspx" id="frmSuggest" class="div_middle">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE1NTQxNTkwOTVkGAEFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYBBQlidXRTdWJtaXT/nFa2Yf5fb9Yn/17BgkcFuURm5K96NiOOxNdErgt0CA==" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="4A1B7E5E" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAhqaVfNRxzmMk1zs1+ctjyaozoJZpuXxkpOVJKRbHyuHkMHZh9ZuPBRie2vA/HfoRJ0RYVIQa5Lk0d3HzqxoGGdMllptNH+Z1WupheWpuKGjs/msUY9J9tRrkasNVZOwpkMs+5TT9GNXlf38r+oifP2c+BEqw8M0vFJlBsMTLq6+xElT5h9/yg8WIbgd/T/ugSqUIRV7vN0kPfdJGIYN+q8" />
+</div>
+        <table style="width: 1000px;" class="text">
+            <tr height="30px">
+                <td width="25%" style="text-align:right;">&nbsp;Your Name: </td>
+                <td width="35%" height="36">
+                  <input name="txtName" type="text" maxlength="100" id="txtName" style="width:100%;" />
+                </td>
+                <td rowspan="4" align="center">
+                    <img alt="butterfly" src="../images/butterfly2.gif" tppabs="http://www.hymann.com/images/butterfly2.gif" /></td>
+            </tr>
+            <tr>
+                <td style="text-align:right;">&nbsp;Your Email: </td>
+                <td height="36">
+                    <input name="txtEmail" type="text" maxlength="100" id="txtEmail" style="width:100%;" />
+                </td>
+
+            </tr>
+            <tr>
+                <td style="text-align:right;">&nbsp;Interested in: </td>
+                <td height="36">
+                    <select name="ddlType" id="ddlType">
+	<option value="1">All</option>
+	<option value="2">Adminner</option>
+	<option value="3">Regex Builder</option>
+	<option value="4">C&amp;D Engine</option>
+
+</select>
+                </td>
+
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align:right;">&nbsp;
+                    </td>
+
+
+            </tr>
+                        <tr>
+                <td colspan="2" align="right"  valign="middle">
+                    <span class="bigfont3">* All fields are compulsory!&nbsp;</span>&nbsp;&nbsp;&nbsp;
+                  <input type="image" name="butSubmit" id="butSubmit" src="../Images/but_mailing_list-1.png" tppabs="http://www.hymann.com/Images/but_mailing_list.png" align="absmiddle" onclick="return checkData();" style="height:30px;" />
+                    &nbsp;&nbsp;
+                </td>
+
+                <td>&nbsp;
+                    
+                            </td>
+            </tr>
+        </table>
+
+    </form>
+            <!--
+    <div id="bmenuFGTL">
+<!--<a href="" target="_top" style="text-decoration:none;">
+<img src="/images/facebook.png" alt="Facebook" style="border:0;width:32px;height:32px;"/>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://plus.google.com/u/0/103773024061501456727?prsrc=3"
+   rel="publisher" target="_top" style="text-decoration:none;">
+<img src="/images/gplus-32.png" alt="Google+" style="border:0;width:32px;height:32px;"/>&nbsp;&nbsp;
+<a href="https://twitter.com/HyMannSoft"
+   target="_top" style="text-decoration:none;">
+<img src="/images/twitter.png" alt="Twitter" style="border:0;width:32px;height:32px;"/>&nbsp;&nbsp;
+<a href="https://www.linkedin.com/profile/view?id=357075493"
+   target="_top" style="text-decoration:none;">
+<img src="/images/linkin.png" alt="LinkIn" style="border:0;width:32px;height:32px;"/></a>
+
+    	</div>
+-->
+<div id="bmenuall">
+    <div id="bmenu">
+        <ul>
+          <li><a href="../about.html" tppabs="http://www.hymann.com/about.html"><span class="al"></span>About Us<span class="ar"></span></a></li>
+            <li><a href="contact.html" tppabs="http://www.hymann.com/support/contact.html"><span class="al"></span>Contact Us<span class="ar"></span></a></li>
+        
+            <li><a href="suggest.aspx.htm" tppabs="http://www.hymann.com/support/suggest.aspx"><span class="al"></span>Suggest<span class="ar"></span></a></li>
+                <li><a href="../privacy.html" tppabs="http://www.hymann.com/privacy.html"><span class="al"></span>Privacy<span class="ar"></span></a></li>
+                    <li><a href="../link.html" tppabs="http://www.hymann.com/link.html"><span class="al"></span>Links<span class="ar"></span></a></li>
+        </ul>
+        <div style="font-family: Arial; font-size: 16px;width: 900px; text-align: right; padding-top:20px;" align="left">&copy; 2014 - 2015 &nbsp; <strong>HyMann Soft</strong>,&nbsp; All rights reserved. 
+    	</div>
+    </div>
+  
+</div>
+    
+
+</body>
+</html>
